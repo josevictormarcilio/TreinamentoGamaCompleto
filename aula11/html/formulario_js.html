@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <script>
+            function validar() {
+               var nome=formuser.nome.value;
+               var email=formuser.email.value;
+               var senha=formuser.senha.value;
+
+                if (nome == "") {
+                    alert("Preencha o campo nome");
+                    formuser.nome.focus();
+                    return false;
+                } 
+                if (email == "" || email.indexOf('@')==-1) {
+                    alert("Preencha o campo email contendo o @");
+                    formuser.email.focus();
+                    return false;
+                } 
+                if (senha == "" || senha.length < 5) {
+                    alert("Preencha o campo senha comno mínimo 6 caracteres");
+                    formuser.senha.focus();
+                    return false;
+                } 
+                alert ("O Aluno " + nome + " cadastrou o email " + email);
+            }
+            
+
+        </script>
+
+    </head>
+    <title> GAMA - Contato </title>
+    <body>
+
+        <div align="center"> <img src="..\img\logoGama.png"  width="20%" height="40%"> </div>
+
+        <h2> Contato GAMA Academy</h2>
+
+        <div align="left"><br> Para entrar e contato conosco, basta preencher os campos do formulário abaixo:</br></div><br>
+        
+        <form name="formuser" action="#" method="POS">
+            Nome: <input type="text" name="nome"><br><br>
+            Email: <input type="text" name="email"><br><br>
+            Senha: <input type="password" name="senha"><br><br>
+            <input type="submit" onclick="return validar()">
+        </form>
+        
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+//criar BD
+create database itau
+
+//criar tabela 
+create table itau.clientes(
+Codigo_Cliente integer(6) not null,
+Nome_Cliente varchar(50) not null,
+Idade_Cliente integer(3) not null,
+Email_Cliente varchar(80) not null
+)
+
+//ver estrutura da tabela
+describe clientes 
+
+//inserir cliente
+insert into itau.clientes
+(Codigo_Cliente,Nome_Cliente,Idade_Cliente,Email_Cliente)
+values
+(1,"José Victor",24,"josevictormello@hotmail.com"),
+(2,"Maria",20,"maria@hotmail.com"),
+(3,"Fabricio",27,"fabricio@hotmail.com")
+
+//visualizar
+select * from itau.clientes

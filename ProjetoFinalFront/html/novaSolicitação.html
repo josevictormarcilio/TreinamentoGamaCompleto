@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/estilo.css">
+
+    <script src="/js/novaSolicitacao.js"></script>
+
+</head>
+<body>
+    <div class="container h-100 d-flex"> <!-- ocupar toda a página, centralizada na vertical -->
+        <div class="row w-100 align-items-center"> <!-- ocupa toda a largula centralizando o conteúdo -->
+            <div class="col-8 mx-auto"> <!-- uma única coluna ocupando 8 dos 12 espaços, centralizada  -->
+
+                <div class="jumbotron">
+                    <div class="row"> 
+                        <div class="col">
+                            <div class="text-center" id="msgErro"></div>
+                        </div>
+                    </div>
+
+                    <h3>Faça uma nova solicitação</h3><br>
+                    <form onsubmit="return false;">
+                        Técnico *<input class="form-control" type="text" id="nome_tecnico" placeholder="José Mello" required>
+                        Operadora *<input class="form-control" type="operadora" id="operadora" placeholder="jose@itau-unibanco.com.br" required>
+                        Celular/Whatsapp *<input class="form-control" type="tel" id="telefone" placeholder="91111-2222" required>
+                        Documento *<input class="form-control" type="text" id="doc" placeholder="xx.xxx.xxx-xx" required>
+                        PDV *
+                        <select required>
+                            
+                            <option value="agencia">AG</option>
+                            <option value="financeira">Financeira</option>
+                            <option value="cei">CEI</option>
+                            <option value="pab">PAB</option>
+                        </select> <br><br>
+                        Data * <input class="form-control" type="date" id="data" placeholder="dd/mm/aaaa" required>
+                        Hora *<input class="form-control" type="time" id="hora" placeholder="11:30" required>
+                        <br> Prezad(a)o usuári(a)o por favor preencher todos os campos com (*) <br><br><br>
+                        <div class="col text-center">
+                            <button class="btn btn-outline-primary" onclick="exibir(event)">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

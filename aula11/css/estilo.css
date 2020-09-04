@@ -1,0 +1,27 @@
+/* CSS para título da página */
+
+p{
+    color: red;
+    font-size: 18px;
+    width: 500px;
+}
+
+#titulo{
+    color: blue;
+}
+
+.conteudo{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo1{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+      
